@@ -1,0 +1,1130 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Grand Theft Auto V (GTA 5) full Türkçe PC sürümünü v1.0.3337 / 1.69 versiyonuyla ücretsiz indir. Los Santos’un devasa açık dünyasında maceraya hemen başla!">
+    <meta name="keywords" content="GTA 5 indir, Grand Theft Auto V indir, GTA 5 full indir, GTA 5 Türkçe indir, GTA 5 v1.0.3337 indir, GTA 5 1.69 indir, GTA 5 PC indir, GTA 5 ücretsiz indir">
+    <title>Grand Theft Auto V (GTA 5) Full İndir – v1.0.3337 / 1.69 Türkçe PC</title>
+    <link rel="icon" href="favicon-5.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Ana Sayfa ile Aynı Temel Stiller */
+        :root {
+            --primary: #3b82f6;
+            --primary-dark: #2563eb;
+            --secondary: #ef4444;
+            --dark: #1e293b;
+            --light: #f8fafc;
+            --gray: #94a3b8;
+            --dark-gray: #64748b;
+            --card-bg: #ffffff;
+            --section-bg: #f1f5f9;
+            --header-bg: #1e293b;
+            --footer-bg: #1e293b;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--section-bg);
+            color: var(--dark);
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        /* Header - Ana Sayfa ile Aynı */
+        header {
+            background-color: var(--header-bg);
+            color: white;
+            padding: 1rem 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: white;
+        }
+
+        .logo span {
+            color: var(--primary);
+        }
+
+        nav {
+            position: relative;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 1.5rem;
+        }
+
+        nav ul li a {
+            color: white;
+            font-weight: 500;
+            transition: color 0.3s;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.5rem;
+        }
+
+        nav ul li a:hover {
+            color: var(--primary);
+        }
+
+        .mobile-menu-btn {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.5rem;
+            cursor: pointer;
+            display: none;
+            padding: 0.5rem;
+        }
+
+        .header-search {
+            position: relative;
+            margin-left: auto;
+            margin-right: -49rem;
+            width: 200px;
+        }
+
+        .header-search input {
+            width: 100%;
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 20px;
+            background-color: rgba(255,255,255,0.2);
+            color: white;
+            transition: all 0.3s;
+        }
+
+        .header-search input:focus {
+            outline: none;
+            background-color: rgba(255,255,255,0.3);
+            width: 250px;
+        }
+
+        .header-search input::placeholder {
+            color: rgba(255,255,255,0.7);
+        }
+
+        .header-search button {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: none;
+            border: none;
+            color: white;
+            cursor: pointer;
+        }
+
+        /* Mobile Menu - Ana Sayfa ile Aynı */
+        .mobile-menu {
+            display: none;
+            position: fixed;
+            top: 70px;
+            left: 0;
+            right: 0;
+            background-color: var(--header-bg);
+            z-index: 999;
+            padding: 1rem;
+            box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+            max-height: calc(100vh - 70px);
+            overflow-y: auto;
+        }
+
+        .mobile-menu.active {
+            display: block;
+        }
+
+        .mobile-menu ul {
+            list-style: none;
+        }
+
+        .mobile-menu ul li {
+            margin-bottom: 0.5rem;
+        }
+
+        .mobile-menu ul li a {
+            display: block;
+            padding: 0.8rem 1rem;
+            color: white;
+            border-radius: 6px;
+            transition: all 0.3s;
+        }
+
+        .mobile-menu ul li a:hover {
+            background-color: rgba(255,255,255,0.1);
+            color: var(--primary);
+        }
+
+        /* Oyun Detay Özel Stilleri */
+        main {
+            flex: 1;
+            padding: 2rem 0;
+        }
+
+        .game-hero {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            margin-bottom: 2rem;
+            align-items: center;
+        }
+
+        .game-cover-container {
+            flex: 1;
+            min-width: 400px;
+            max-width: 600px;
+        }
+
+        .game-cover {
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            aspect-ratio: 10/9;
+        }
+
+        .game-cover:hover {
+            transform: translateY(-5px);
+        }
+
+        .game-cover img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .game-info {
+            flex: 2;
+            min-width: 300px;
+        }
+
+        .game-title {
+            font-size: 2.2rem;
+            font-weight: 800;
+            margin-bottom: 0.5rem;
+            color: var(--dark);
+            line-height: 2.2;
+        }
+
+        .game-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            margin-bottom: 1.5rem;
+            color: var(--dark-gray);
+        }
+
+        .game-meta-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.95rem;
+        }
+
+        .game-meta-item i {
+            color: var(--primary);
+        }
+
+        .game-description {
+            background-color: var(--card-bg);
+            padding: 1.5rem;
+            border-radius: 12px;
+            margin-bottom: 2rem;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+
+        .section-title {
+            font-size: 1.5rem;
+            margin-top: 0;
+            margin-bottom: 1rem;
+            color: var(--primary);
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--primary);
+            display: inline-block;
+        }
+
+        .game-details {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .detail-card {
+            background-color: var(--card-bg);
+            padding: 1.5rem;
+            border-radius: 12px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+
+        .requirements-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .requirements-list li {
+            margin-bottom: 0.75rem;
+            display: flex;
+            align-items: flex-start;
+            gap: 0.5rem;
+        }
+
+        .requirements-list li::before {
+            content: "•";
+            color: var(--primary);
+            font-weight: bold;
+        }
+
+        /* Ekran Görüntüleri */
+        .screenshots {
+            margin-bottom: 2rem;
+        }
+
+        .screenshot-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 1rem;
+        }
+
+        .screenshot-item {
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            aspect-ratio: 16/9;
+            cursor: pointer;
+        }
+
+        .screenshot-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+
+        .screenshot-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Lightbox Modal */
+        .lightbox-modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.9);
+            z-index: 1001;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .lightbox-modal.active {
+            display: flex;
+        }
+
+        .lightbox-content {
+            max-width: 90%;
+            max-height: 90%;
+            position: relative;
+        }
+
+        .lightbox-content img {
+            max-width: 100%;
+            max-height: 90vh;
+            object-fit: contain;
+        }
+
+        .close-lightbox {
+            position: absolute;
+            top: -40px;
+            right: 0;
+            color: white;
+            font-size: 2rem;
+            cursor: pointer;
+        }
+
+        /* İndirme Butonları */
+        .download-section {
+            background-color: var(--card-bg);
+            padding: 1.5rem;
+            border-radius: 12px;
+            margin-bottom: 2rem;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+
+        .download-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.2s ease;
+            cursor: pointer;
+            border: none;
+            font-size: 1rem;
+        }
+
+        .btn-primary {
+            background-color: var(--primary);
+            color: white;
+            box-shadow: 0 4px 6px -1px rgba(37, 99, 235, 0.3);
+        }
+
+        .btn-primary:hover {
+            background-color: var(--primary-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px -3px rgba(37, 99, 235, 0.3);
+        }
+
+        .btn-secondary {
+            background-color: var(--secondary);
+            color: white;
+            box-shadow: 0 4px 6px -1px rgba(239, 68, 68, 0.3);
+        }
+
+        .btn-secondary:hover {
+            background-color: #dc2626;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px -3px rgba(239, 68, 68, 0.3);
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            color: var(--primary);
+            border: 2px solid var(--primary);
+        }
+
+        .btn-outline:hover {
+            background-color: rgba(59, 130, 246, 0.1);
+        }
+
+        /* Yorumlar Bölümü */
+        .comments-section {
+            background-color: var(--card-bg);
+            padding: 1.5rem;
+            border-radius: 12px;
+            margin-bottom: 2rem;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+
+        .comment-form {
+            margin-bottom: 2rem;
+        }
+
+        .form-group {
+            margin-bottom: 1rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid var(--gray);
+            border-radius: 8px;
+            font-size: 1rem;
+        }
+
+        .form-group textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+
+        .submit-comment {
+            background-color: var(--primary);
+            color: white;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: background-color 0.3s;
+        }
+
+        .submit-comment:hover {
+            background-color: var(--primary-dark);
+        }
+
+        .comments-list {
+            margin-top: 2rem;
+        }
+
+        .comment {
+            padding: 1rem 0;
+            border-bottom: 1px solid var(--section-bg);
+        }
+
+        .comment:last-child {
+            border-bottom: none;
+        }
+
+        .comment-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 0.5rem;
+        }
+
+        .comment-author {
+            font-weight: 600;
+            color: var(--dark);
+        }
+
+        .comment-date {
+            color: var(--dark-gray);
+            font-size: 0.85rem;
+        }
+
+        .comment-content {
+            color: var(--dark);
+        }
+
+        /* Benzer Oyunlar */
+        .related-games {
+            margin-bottom: 2rem;
+        }
+
+        .related-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .related-card {
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .related-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+
+        .related-card img {
+            width: 100%;
+            height: 120px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .related-info {
+            padding: 1rem;
+        }
+
+        .related-info h4 {
+            margin: 0 0 0.5rem;
+            font-size: 1rem;
+            color: var(--dark);
+        }
+
+        .related-info .game-date {
+            font-size: 0.8rem;
+            color: var(--dark-gray);
+        }
+
+        /* Footer - Ana Sayfa ile Aynı */
+        footer {
+            background-color: var(--footer-bg);
+            color: white;
+            padding: 2rem 0 1rem;
+            margin-top: auto;
+        }
+
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .footer-column {
+            margin-bottom: 1.5rem;
+        }
+
+        .footer-column h3 {
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+            position: relative;
+            padding-bottom: 0.5rem;
+        }
+
+        .footer-column h3::after {
+            content: '';
+            position: absolute;
+            width: 30px;
+            height: 2px;
+            background-color: var(--primary);
+            bottom: 0;
+            left: 0;
+        }
+
+        .footer-column p {
+            color: #bbb;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+            font-size: 0.9rem;
+        }
+
+        .footer-links {
+            list-style: none;
+            margin-bottom: 1.5rem;
+        }
+
+        .footer-links li {
+            margin-bottom: 0.6rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.9rem;
+        }
+
+        .footer-links a, .footer-links li {
+            color: #bbb;
+            transition: color 0.3s;
+        }
+
+        .footer-links a:hover {
+            color: white;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 0.8rem;
+            margin-top: 1.2rem;
+        }
+
+        .social-links a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 36px;
+            height: 36px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            color: white;
+            transition: all 0.3s;
+            font-size: 0.9rem;
+        }
+
+        .social-links a:hover {
+            background-color: var(--primary);
+            transform: translateY(-3px);
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 1.5rem;
+            margin-top: 1.5rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #bbb;
+            font-size: 0.8rem;
+        }
+
+        /* Responsive Tasarım */
+        @media (max-width: 992px) {
+            nav ul {
+                gap: 1rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .mobile-menu-btn {
+                display: block;
+            }
+
+            nav ul {
+                display: none;
+            }
+
+            .header-search {
+                display: none;
+            }
+
+            .game-hero {
+                flex-direction: column;
+            }
+
+            .game-cover-container {
+                max-width: 100%;
+            }
+
+            .related-grid {
+                grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            }
+
+            .footer-container {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .footer-column h3::after {
+                left: 50%;
+                transform: translateX(-50%);
+            }
+
+            .social-links {
+                justify-content: center;
+            }
+
+            .footer-links li {
+                justify-content: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .logo {
+                font-size: 1.3rem;
+            }
+
+            .game-title {
+                font-size: 1.8rem;
+            }
+
+            .download-buttons {
+                flex-direction: column;
+            }
+
+            .btn {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+<!-- Header - Ana Sayfa ile Aynı -->
+<header>
+    <div class="container header-container">
+        <a href="index.html" class="logo">Oyun<span>İndir</span>Hub</a>
+
+        <div class="header-search">
+            <input type="text" id="headerSearchInput" placeholder="Oyun ara...">
+            <button id="headerSearchBtn"><i class="fas fa-search"></i></button>
+        </div>
+
+        <button class="mobile-menu-btn" id="mobileMenuBtn">
+            <i class="fas fa-bars"></i>
+        </button>
+
+        <nav id="desktopNav">
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> Ana Sayfa</a></li>
+                <li><a href="tüm-oyunlar.html"><i class="fas fa-gamepad"></i> Oyunlar</a></li>
+                <li><a href="categories.html"><i class="fas fa-list"></i> Kategoriler</a></li>
+                <li><a href="yeni.html"><i class="fas fa-star"></i> Yeni Çıkanlar</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <ul>
+            <li><a href="index.html"><i class="fas fa-home"></i> Ana Sayfa</a></li>
+            <li><a href="tüm-oyunlar.html"><i class="fas fa-gamepad"></i> Oyunlar</a></li>
+            <li><a href="categories.html"><i class="fas fa-list"></i> Kategoriler</a></li>
+            <li><a href="yeni.html"><i class="fas fa-star"></i> Yeni Çıkanlar</a></li>
+            <li><a href="contact.html"><i class="fas fa-envelope"></i> İletişim</a></li>
+        </ul>
+    </div>
+</header>
+
+<main class="container">
+    <section class="game-hero">
+        <div class="game-cover-container">
+            <div class="game-cover">
+                <img src="gta5kapak.jpg" alt="">
+            </div>
+        </div>
+        <div class="game-info">
+            <h1 class="game-title">Grand Theft Auto V /Gta 5 Full İndir + (v1.0.3337/1.69)</h1>
+            <div class="game-meta">
+                <div class="game-meta-item">
+                    <i class="fas fa-calendar-alt"></i>
+                    <span>11 Mayıs 2025</span>
+                </div>
+                <div class="game-meta-item">
+                    <i class="fas fa-gamepad"></i>
+                    <span>Açık Dünya • Aksiyon</span>
+                </div>
+                <div class="game-meta-item">
+                    <i class="fas fa-download"></i>
+                    <span>120 GB</span>
+                </div>
+                <div class="game-meta-item">
+                    <i class="fas fa-user-friends"></i>
+                    <span>Tek Oyunculu + Çok Oyunculu</span>
+                </div>
+            </div>
+
+            <div class="game-description">
+                <h2 class="section-title">Oyun Hakkında</h2>
+                <p>GTA 5, geniş açık dünyası, etkileyici hikayesi ve detaylı grafikleriyle milyonlarca oyuncunun favorisi. Los Santos şehrinde geçen bu macerada, Michael, Franklin ve Trevor’ın hikâyesine tanıklık ederken hem görevleri tamamlayabilir hem de özgürce şehri keşfedebilirsiniz.
+
+                </p>
+
+                <p>GTA 5 indir seçeneği ile oyunun sunduğu yüksek kaliteli grafikler, araç çeşitliliği, serbest dolaşım modu ve online çok oyunculu deneyimi anında keşfedin. İster tek başına hikâyeye odaklanın, ister arkadaşlarınızla GTA Online’da heyecan dolu anlar yaşayın.
+
+                    Yüksek hızda aksiyon, derin hikâye kurgusu ve sınırsız özgürlük istiyorsanız, GTA 5 PC indir seçeneği tam size göre.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="game-details">
+        <div class="detail-card">
+            <h3 class="section-title">Sistem Gereksinimleri</h3>
+            <ul class="requirements-list">
+                <li><strong>İşletim Sistemi:</strong> Windows 7 / 8 / 8.1 / 10 (64-bit)</li>
+
+                <li><strong>İşlemci:</strong>Intel Core 2 Quad CPU Q6600 @ 2.40 GHz veya AMD Phenom 9850 Quad-Core @ 2.5 GHz</li>
+                <li><strong>Bellek:</strong> 4 GB RAM</li>
+                <li><strong>Ekran Kartı:</strong> NVIDIA 9800 GT / AMD HD 4870 (1 GB)</li>
+                <li><strong>Depolama:</strong>100 GB boş alan</li>
+                <li><strong>DirectX:</strong> Sürüm 11</li>
+            </ul>
+        </div>
+
+        <div class="detail-card">
+            <h3 class="section-title">Oyun Bilgileri</h3>
+            <ul class="requirements-list">
+                <li><strong>Çıkış Tarihi:</strong> 17 Eylül 2013 (PC sürümü 14 Nisan 2015)
+
+                </li>
+                <li><strong>Tür:</strong> Açık dünya, aksiyon, macera</li>
+                <li><strong>Dil:</strong> İngilizce Türkçe Yama aşağıda indirme linklerinde mevcut</li>
+                <li><strong>Boyut:</strong> 120 GB </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="screenshots">
+        <h2 class="section-title">Ekran Görüntüleri</h2>
+        <div class="screenshot-grid">
+            <div class="screenshot-item" data-src="gta5görsel.jpg">
+                <img src="gta5görsel.jpg" alt="gta 5 indir, Gta 5 ücretsiz indir, gta 5 ücretsiz indirme">
+            </div>
+            <div class="screenshot-item" data-src="gta5görsel2.jpg">
+                <img src="gta5görsel2.jpg" alt="gta 5 full indir, gta 5 ücretsiz">
+            </div>
+            <div class="screenshot-item" data-src="gta5görsel3.jpg">
+                <img src="gta5görsel3.jpg" alt="Gta indir, gta ücretsiz indirme">
+            </div>
+            <div class="screenshot-item" data-src="gta5görsel4.jpg">
+                <img src="gta5görsel4.jpg" alt="gta 5 indirme">
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox-modal" id="lightboxModal">
+        <div class="lightbox-content">
+            <span class="close-lightbox" id="closeLightbox">&times;</span>
+            <img id="lightboxImage" src="" alt="">
+        </div>
+    </div>
+
+    <section class="download-section">
+        <h2 class="section-title">İndirme Linkleri</h2>
+        <p>Gta 5 oyununu aşağıdaki linklerden güvenle indirebilirsiniz. İndirme işlemi başlamazsa lütfen sayfayı yenileyin.</p>
+
+        <div class="download-buttons">
+            <a href="https://ay.live/NxIO" class="btn btn-primary">
+                <i class="fas fa-download"></i> Gofile Link Tıkla İndir
+            </a>
+            <a href="https://ay.live/Yyb2m" class="btn btn-secondary">
+                <i class="fas fa-magnet"></i> Türkçe Yama İndir
+            </a>
+        </div>
+    </section>
+
+    <section class="comments-section">
+        <h2 class="section-title">Kullanıcı Yorumları</h2>
+
+        <div class="comment-form">
+            <h3>Yorum Yap</h3>
+            <form id="commentForm">
+                <div class="form-group">
+                    <label for="commentName">Adınız</label>
+                    <input type="text" id="commentName" required>
+                </div>
+                <div class="form-group">
+                    <label for="commentText">Yorumunuz</label>
+                    <textarea id="commentText" required></textarea>
+                </div>
+                <button type="submit" class="submit-comment">Yorum Gönder</button>
+            </form>
+        </div>
+
+        <div class="comments-list" id="commentsList">
+            <!-- Yorumlar buraya eklenecek -->
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="comment-author">Oyun Sever</span>
+                    <span class="comment-date">12 Mayıs 2025</span>
+                </div>
+                <div class="comment-content">
+                    Harika bir oyun, grafikler çok etkileyici. Kesinlikle tavsiye ederim!
+                </div>
+            </div>
+
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="comment-author">Aksiyon Tutkunu</span>
+                    <span class="comment-date">10 Mayıs 2025</span>
+                </div>
+                <div class="comment-content">
+                    Hikaye biraz kısa ama aksiyon dolu sahneleri çok keyifli. İndirme linki çalışıyor.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="related-games">
+        <h2 class="section-title">Benzer Oyunlar</h2>
+        <div class="related-grid">
+            <a href="gta-4-indir.html" class="related-card">
+                <img src="gta4.jpg" alt="">
+                <div class="related-info">
+                    <h4>Gta 4 İndir - Full Türkçe PC</h4>
+                    <div class="game-date">11 Mayıs 2025</div>
+                </div>
+            </a>
+            <a href="red-dead-redemption-2-indir.html" class="related-card">
+                <img src="rdr2.jpg" alt="Seçilen">
+                <div class="related-info">
+                    <h4>Red Dead Redemption 2 İndir - Full Türkçe Yama PC</h4>
+                    <div class="game-date">11 Mayıs 2025</div>
+                </div>
+            </a>
+
+        </div>
+    </section>
+</main>
+
+<!-- Footer - Ana Sayfa ile Aynı -->
+<footer>
+    <div class="container">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>Hakkında</h3>
+                <p>OyunİndirHub, en iyi ücretsiz oyunları tek bir platformda sunar. Güvenli indirme ve sınırsız eğlence için doğru adres.</p>
+            </div>
+
+            <div class="footer-column">
+                <h3>İletişim</h3>
+                <ul class="footer-links">
+                    <li><i class="fas fa-envelope"></i> kocb2754@gmail.com</li>
+                </ul>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>&copy; 2025 OyunİndirHub. Tüm hakları saklıdır.</p>
+        </div>
+    </div>
+</footer>
+
+<script>
+    // Mobile Menu Toggle - Ana Sayfa ile Aynı
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+
+    mobileMenuBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('active');
+
+        // Hamburger ikonunu değiştir
+        const icon = mobileMenuBtn.querySelector('i');
+        if (mobileMenu.classList.contains('active')) {
+            icon.classList.remove('fa-bars');
+            icon.classList.add('fa-times');
+        } else {
+            icon.classList.remove('fa-times');
+            icon.classList.add('fa-bars');
+        }
+    });
+
+    // Menü dışına tıklandığında menüyü kapat
+    document.addEventListener('click', (e) => {
+        if (!mobileMenu.contains(e.target) && e.target !== mobileMenuBtn && !mobileMenuBtn.contains(e.target)) {
+            mobileMenu.classList.remove('active');
+            const icon = mobileMenuBtn.querySelector('i');
+            icon.classList.remove('fa-times');
+            icon.classList.add('fa-bars');
+        }
+    });
+
+    // Lightbox Fonksiyonelliği
+    const lightboxModal = document.getElementById('lightboxModal');
+    const lightboxImage = document.getElementById('lightboxImage');
+    const closeLightbox = document.getElementById('closeLightbox');
+    const screenshotItems = document.querySelectorAll('.screenshot-item');
+
+    screenshotItems.forEach(item => {
+        item.addEventListener('click', () => {
+            const imgSrc = item.getAttribute('data-src');
+            lightboxImage.src = imgSrc;
+            lightboxModal.classList.add('active');
+            document.body.style.overflow = 'hidden'; // Sayfa kaydırmayı engelle
+        });
+    });
+
+    closeLightbox.addEventListener('click', () => {
+        lightboxModal.classList.remove('active');
+        document.body.style.overflow = 'auto'; // Sayfa kaydırmayı geri aç
+    });
+
+    lightboxModal.addEventListener('click', (e) => {
+        if (e.target === lightboxModal) {
+            lightboxModal.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+    });
+
+    // Yorum Formu İşleme
+    const commentForm = document.getElementById('commentForm');
+    const commentsList = document.getElementById('commentsList');
+
+    commentForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+
+        const name = document.getElementById('commentName').value;
+        const text = document.getElementById('commentText').value;
+
+        if (name && text) {
+            // Yeni yorum oluştur
+            const now = new Date();
+            const dateStr = now.toLocaleDateString('tr-TR', {
+                day: 'numeric',
+                month: 'long',
+                year: 'numeric'
+            });
+
+            const commentHTML = `
+                <div class="comment">
+                    <div class="comment-header">
+                        <span class="comment-author">${name}</span>
+                        <span class="comment-date">${dateStr}</span>
+                    </div>
+                    <div class="comment-content">
+                        ${text}
+                    </div>
+                </div>
+            `;
+
+            // Yorumu listeye ekle (en üste)
+            commentsList.insertAdjacentHTML('afterbegin', commentHTML);
+
+            // Formu temizle
+            commentForm.reset();
+
+            // Yorumları localStorage'a kaydet
+            saveComments();
+
+            // Kullanıcıya bildirim göster
+            alert('Yorumunuz başarıyla gönderildi!');
+        }
+    });
+
+    // Yorumları localStorage'dan yükle
+    function loadComments() {
+        const savedComments = localStorage.getItem('lootOfBaalComments');
+        if (savedComments) {
+            commentsList.innerHTML = savedComments + commentsList.innerHTML;
+        }
+    }
+
+    // Yorumları localStorage'a kaydet
+    function saveComments() {
+        localStorage.setItem('lootOfBaalComments', commentsList.innerHTML);
+    }
+
+    // Sayfa yüklendiğinde yorumları yükle
+    window.addEventListener('DOMContentLoaded', loadComments);
+
+    // Header Arama Fonksiyonelliği
+    const headerSearchInput = document.getElementById('headerSearchInput');
+    const headerSearchBtn = document.getElementById('headerSearchBtn');
+
+    headerSearchBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        if (headerSearchInput.value.trim()) {
+            window.location.href = `tüm-oyunlar.html?search=${encodeURIComponent(headerSearchInput.value.trim())}`;
+        }
+    });
+
+    headerSearchInput.addEventListener('keypress', (e) => {
+        if (e.key === 'Enter' && headerSearchInput.value.trim()) {
+            window.location.href = `tüm-oyunlar.html?search=${encodeURIComponent(headerSearchInput.value.trim())}`;
+        }
+    });
+</script>
+</body>
+</html>
