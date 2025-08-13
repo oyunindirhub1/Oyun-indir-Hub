@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://oyunindirhub1.github.io/Oyun-indir-Hub/sitemap.xml
+
+Sitemap: https://oyunindirhub1.github.io/Oyun-indir-Hub/sitemap_index.xml
