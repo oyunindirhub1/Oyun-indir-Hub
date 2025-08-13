@@ -1,9 +1,12 @@
 name: Deploy Sitemap
-on: [push]
+on:
+  push:
+    branches: [ "main" ]  # main branch'ında tetiklenecek
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - run: touch .nojekyll
+      - run: touch .nojekyll  # Jekyll engelini kaldırır
       - uses: actions/upload-pages-artifact@v2
+      - uses: actions/deploy-pages@v2  # GitHub Pages'e deploy
