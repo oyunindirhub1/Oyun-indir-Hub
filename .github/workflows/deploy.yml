@@ -14,7 +14,5 @@ jobs:
       - name: Create .nojekyll
         run: touch .nojekyll
 
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v2
-        with:
-          path: .
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v2
